@@ -4,7 +4,7 @@ let Arr: Array<string> = []
 let today = new Date
 let year = today.getFullYear()
 for (let i: number = 0; i < 20; i++) {
-  let stringDate = (year - i).toString() + "/" + (year - i - 1).toString()
+  let stringDate = (year - i - 1).toString() + "/" + (year - i).toString()
   Arr.push(stringDate)
 }
 export const SkolniRok = () => {
