@@ -9,49 +9,71 @@ import {VedouciPrace} from "./components/VedouciPrace.tsx";
 import {ObsahPrace} from "./components/ObsahPrace.tsx";
 import {TemaPrace} from "./components/TemaPrace.tsx";
 import {PraktickaCast} from "./components/PraktickaCast.tsx";
+import {Formik} from "formik";
 
-export const FormContext = React.createContext({
-  form: {},
-  handleFormChange: () => {}
-})
+interface Values {
+  id: number
+  jmeno: string
+  prijmeni: string
+  obor: string
+  trida: string
+  skolni_rok: string
+  datum_narozeni: string
+  predmet: string
+  tema: string
+  obsah: string
+  prakticka_cast: string
+  vedouci: string
+}
+
+function submitForm(Values: Values) {
+  console.log(Values)
+}
 
 export const Form = () => {
   return (
-    <div className="min-h-screen h-fit flex w-full justify-center my-5">
-      <div className="min-w-[700px] bg-neutral p-2 rounded-2xl">
-        <h1 className="text-center text-4xl font-bold mt-3">Vytvořit novou práci</h1>
-        <form>
-          <div className="flex flex-row">
-            <div className="flex flex-col">
-              <JmenoAprijmeni/>
-              <Obor/>
+    <Formik
+      initialValues={{}}
+      onSubmit={() => submitForm()}
+    >
+      <div className="min-h-screen h-fit flex w-full justify-center my-5">
+        <div className="min-w-[700px]  bg-neutral p-2 rounded-2xl">
+          <h1 className="text-center text-4xl font-bold mt-3">Vytvořit novou práci</h1>
+          <form className="">
+            <div className="flex flex-row justify-center">
+              <div className="flex flex-col items-center">
+                <JmenoAprijmeni/>
+                <Obor/>
+              </div>
+              <div className="flex flex-col">
+                <DatumNarozeni/>
+                <SkolniRok/>
+              </div>
             </div>
             <div className="flex flex-col">
-              <DatumNarozeni/>
-              <SkolniRok/>
+              <div className="flex flex-row justify-center">
+                <Predmet/>
+                <VedouciPrace/>
+              </div>
             </div>
-          </div>
-          <div className="flex flex-col">
-            <div className="flex flex-row">
-              <Predmet />
-              <VedouciPrace />
+            <div className="flex justify-center">
+              <TemaPrace/>
             </div>
-          </div>
-          <TemaPrace />
-          <div className="flex flex-col">
-            <div className="flex flex-row">
-              <ObsahPrace />
-              <PraktickaCast />
-            </div>
-            <div className="flex flex-row">
+            <div className="flex flex-col ">
+              <div className="flex flex-row justify-center">
+                <ObsahPrace/>
+                <PraktickaCast/>
+              </div>
+              <div className="flex flex-row justify-center">
 
+              </div>
             </div>
-          </div>
-          <div className="w-full flex justify-center mt-2">
-            <button type="submit" className="btn">Vytvořit</button>
-          </div>
-        </form>
+            <div className="w-full flex justify-center mt-2">
+              <button type="submit" className="btn">Vytvořit</button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
+    </Formik>
   )
 }

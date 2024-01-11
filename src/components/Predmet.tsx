@@ -1,4 +1,4 @@
-import {Input, Select} from "react-daisyui";
+import {Input} from "react-daisyui";
 
 export const Predmet = () => {
   return (
@@ -8,7 +8,7 @@ export const Predmet = () => {
           <label className="label">
             <span className="label-text text-lg">Předmět</span>
           </label>
-          <Input className="p-2 px-4 rounded-xl"/>
+          <Input placeholder="např. WEB" className="p-2 px-4 rounded-xl"/>
         </div>
       </div>
     </>
