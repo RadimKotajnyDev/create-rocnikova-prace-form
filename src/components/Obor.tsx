@@ -9,7 +9,7 @@ export const Obor = () => {
             <span className="label-text text-lg">Obor</span>
           </label>
           <div className="relative w-full block">
-            <Select className="p-2 px-4 appearance-none rounded-xl w-full" defaultValue={'default'}
+            <Select className="p-2 px-4 appearance-none rounded-xl w-full drop-shadow-lg" defaultValue={'default'}
                     onChange={console.log}>
               <option value={'default'} disabled>
                 ------------------------------

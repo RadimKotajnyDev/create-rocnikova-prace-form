@@ -8,7 +8,7 @@ export const JmenoAprijmeni = () => {
           <label className="label">
             <span className="label-text text-lg">Jméno a příjmení</span>
           </label>
-          <Input placeholder="např. Jan Novák" className="p-2 px-4 rounded-xl"/>
+          <Input placeholder="např. Jan Novák" className="p-2 px-4 rounded-xl drop-shadow-lg"/>
         </div>
       </div>
     </>

@@ -1,8 +1,8 @@
 import {Select} from "react-daisyui";
 
 let Arr: Array<string> = []
-let today = new Date
-let year = today.getFullYear()
+let today: Date = new Date
+let year: number = today.getFullYear()
 for (let i: number = 0; i < 20; i++) {
   let stringDate = (year - i - 1).toString() + "/" + (year - i).toString()
   Arr.push(stringDate)
@@ -15,7 +15,7 @@ export const SkolniRok = () => {
           <span className="label-text text-lg">Školní rok</span>
         </label>
         <div className="relative w-full block">
-          <Select className="p-2 px-4 appearance-none rounded-xl w-full" defaultValue={'default'}
+          <Select className="p-2 px-4 appearance-none rounded-xl w-full drop-shadow-lg" defaultValue={'default'}
                   onChange={console.log}>
             <option value={'default'} disabled>
               ------------------------------

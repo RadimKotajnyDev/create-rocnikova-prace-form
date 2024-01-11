@@ -8,7 +8,7 @@ export const Predmet = () => {
           <label className="label">
             <span className="label-text text-lg">Předmět</span>
           </label>
-          <Input placeholder="např. WEB" className="p-2 px-4 rounded-xl"/>
+          <Input placeholder="např. WEB" className="p-2 px-4 rounded-xl drop-shadow-lg"/>
         </div>
       </div>
     </>

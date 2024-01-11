@@ -8,7 +8,7 @@ export const VedouciPrace = () => {
           <label className="label">
             <span className="label-text text-lg">Vedoucí práce</span>
           </label>
-          <Input className="p-2 px-4 rounded-xl"/>
+          <Input className="p-2 px-4 rounded-xl drop-shadow-lg"/>
         </div>
       </div>
     </>

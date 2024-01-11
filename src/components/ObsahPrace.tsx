@@ -7,7 +7,7 @@ export const ObsahPrace = () => {
         <label className="label">
             <span className="label-text text-lg">Obsah práce</span>
           </label>
-        <Textarea className="rounded-lg p-2 min-h-[225px]" size="lg" />
+        <Textarea className="rounded-lg p-2 min-h-[225px] drop-shadow-lg" size="lg" />
       </div>
     </>
   )
