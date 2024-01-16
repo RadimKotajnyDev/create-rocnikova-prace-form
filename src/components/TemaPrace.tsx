@@ -1,4 +1,4 @@
-import {Input} from "react-daisyui";
+import {Field} from "formik";
 
 export const TemaPrace = () => {
   return (
@@ -8,7 +8,7 @@ export const TemaPrace = () => {
           <label className="label">
             <span className="label-text text-lg">Téma práce</span>
           </label>
-          <Input className="p-2 px-4 rounded-xl drop-shadow-lg"/>
+          <Field name={`data.tema`} className="input p-2 px-4 rounded-xl drop-shadow-lg"/>
         </div>
       </div>
     </>

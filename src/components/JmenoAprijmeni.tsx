@@ -1,4 +1,4 @@
-import {Input} from "react-daisyui";
+import {Field} from "formik";
 
 export const JmenoAprijmeni = () => {
   return (
@@ -8,7 +8,9 @@ export const JmenoAprijmeni = () => {
           <label className="label">
             <span className="label-text text-lg">Jméno a příjmení</span>
           </label>
-          <Input placeholder="např. Jan Novák" className="p-2 px-4 rounded-xl drop-shadow-lg"/>
+          <Field name={`data.jmeno_prijmeni`}
+                 placeholder="např. Jan Novák"
+                 className="input p-2 px-4 rounded-xl drop-shadow-lg"/>
         </div>
       </div>
     </>

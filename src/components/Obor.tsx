@@ -1,4 +1,4 @@
-import {Select} from "react-daisyui";
+import {Field} from "formik";
 
 export const Obor = () => {
   return (
@@ -9,15 +9,18 @@ export const Obor = () => {
             <span className="label-text text-lg">Obor</span>
           </label>
           <div className="relative w-full block">
-            <Select className="p-2 px-4 appearance-none rounded-xl w-full drop-shadow-lg" defaultValue={'default'}
-                    onChange={console.log}>
-              <option value={'default'} disabled>
+            <Field as="select"
+                   name={`data.obor`}
+                   className="input p-2 px-4 appearance-none rounded-xl w-full drop-shadow-lg"
+
+            >
+              <option value={""} disabled>
                 ------------------------------
               </option>
               <option value="26-41-M/01 Elektrotechnika">26-41-M/01 Elektrotechnika</option>
               <option value="18-20-M/01 Informační technologie">18-20-M/01 Informační technologie</option>
               <option value="23-41-M/01 Strojírenství">23-41-M/01 Strojírenství</option>
-            </Select>
+            </Field>
             <div className="pointer-events-none z-30 absolute inset-y-0 right-0 flex items-center pr-3 text-white">
               <svg className="h-5 w-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                 <path

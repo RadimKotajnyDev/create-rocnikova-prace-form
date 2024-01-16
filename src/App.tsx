@@ -1,12 +1,12 @@
 import './App.css'
 import './index.css'
-import {Form} from "./Form.tsx";
+import {FormApp} from "./FormApp.tsx";
 
 function App() {
 
   return (
     <>
-      <Form />
+      <FormApp />
     </>
   )
 }

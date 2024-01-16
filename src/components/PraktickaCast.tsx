@@ -1,4 +1,4 @@
-import {Textarea} from "react-daisyui";
+import {Field} from "formik";
 
 export const PraktickaCast = () => {
   return (
@@ -7,7 +7,9 @@ export const PraktickaCast = () => {
         <label className="label">
           <span className="label-text text-lg">Praktická část</span>
         </label>
-        <Textarea className="rounded-lg p-2 min-h-[225px] drop-shadow-lg" size="lg"/>
+        <Field as="textarea"
+               name={`prakticka_cast`}
+               className="input rounded-lg p-2 min-h-[225px] drop-shadow-lg" size="lg"/>
       </div>
     </>
   )
