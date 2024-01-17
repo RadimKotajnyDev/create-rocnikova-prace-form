@@ -26,31 +26,21 @@ export const FormApp = () => {
       {({errors, touched}) => (
         <Form>
           <div className="min-h-screen h-fit flex w-full justify-center my-5 drop-shadow-xl">
-            <div className="min-w-[700px]  bg-neutral p-2 rounded-2xl">
+            <div className="min-w-fit md:min-w-[700px] bg-neutral p-2 rounded-2xl">
               <h1 className="text-center text-4xl font-bold mt-3">Vytvořit novou práci</h1>
-              <div className="">
-                <div className="flex flex-row justify-start">
-                  <div className="flex flex-col items-center">
-                    <JmenoAprijmeni {...{errors, touched}} />
-                    <Obor {...{errors, touched}} />
-                  </div>
+              <div>
+                <div className="flex flex-col md:flex-row items-center">
                   <div className="flex flex-col">
-                    <Predmet {...{errors, touched}}/>
-                    <TemaPrace {...{errors, touched}}/>
-                  </div>
-                </div>
-                <div className="flex flex-col">
-                  <div className="flex flex-row justify-start">
-                    <SkolniRok {...{errors, touched}}/>
+                    <JmenoAprijmeni {...{errors, touched}} />
+                    <SkolniRok {...{errors, touched}} />
+                    <Obor {...{errors, touched}} />
+                    <Predmet {...{errors, touched}} />
+                    <TemaPrace {...{errors, touched}} />
                     <VedouciPrace {...{errors, touched}}/>
                   </div>
-                </div>
-                <div className="flex justify-center">
-                </div>
-                <div className="flex flex-col ">
-                  <div className="flex flex-row justify-center">
-                    <ObsahPrace {...{errors, touched}}/>
-                    <PraktickaCast {...{errors, touched}}/>
+                  <div className="flex flex-col">
+                    <PraktickaCast {...{errors, touched}} />
+                    <ObsahPrace {...{errors, touched}} />
                   </div>
                 </div>
                 <div className="w-full flex justify-center mt-8">

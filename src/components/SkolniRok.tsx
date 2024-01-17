@@ -23,7 +23,7 @@ export const SkolniRok = ({errors, touched}: any) => {
 
   return (
     <div className="flex w-[330px] component-preview p-4 gap-2 font-sans">
-      <div className="form-control w-full max-w-xs">
+      <div className="form-control w-full max-w-lg">
         <label className="label">
           <span className="label-text text-lg">Školní rok&nbsp;<span className={hasErrorAndTouched() ? "text-red-400" : ""}>
                 {hasErrorAndTouched() ? "(Povinné)" : ""}</span></span>

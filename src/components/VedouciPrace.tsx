@@ -16,8 +16,8 @@ export const VedouciPrace = ({errors, touched}: any) => {
 
   return (
     <>
-      <div className="flex w-[450px] component-preview p-4 gap-2 font-sans">
-        <div className="form-control w-full max-w-full">
+      <div className="flex w-[330px] component-preview p-4 gap-2 font-sans">
+        <div className="form-control w-full max-w-lg">
           <label className="label">
             <span className="label-text text-lg">Vedoucí práce</span>
           </label>
