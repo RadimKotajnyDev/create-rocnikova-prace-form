@@ -1,6 +1,6 @@
 import {Field} from "formik";
 
-export const PraktickaCast = ({errors, touched}) => {
+export const PraktickaCast = ({errors, touched}: any) => {
 
   function hasErrorAndTouched() {
     if (errors

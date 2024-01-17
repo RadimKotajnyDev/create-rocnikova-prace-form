@@ -1,6 +1,6 @@
 import {Field} from "formik";
 
-export const JmenoAprijmeni = ({errors, touched}) => {
+export const JmenoAprijmeni = ({errors, touched}: any) => {
 
 
   function hasErrorAndTouched() {

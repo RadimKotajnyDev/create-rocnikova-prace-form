@@ -1,6 +1,6 @@
 import {Field} from "formik";
 
-export const ObsahPrace = ({errors, touched}) => {
+export const ObsahPrace = ({errors, touched}: any) => {
 
   function hasErrorAndTouched() {
     if (errors

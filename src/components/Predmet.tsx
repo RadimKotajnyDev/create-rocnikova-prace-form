@@ -1,6 +1,6 @@
 import {Field} from "formik";
 
-export const Predmet = ({errors, touched}) => {
+export const Predmet = ({errors, touched}: any) => {
 
    function hasErrorAndTouched() {
     if (errors

@@ -7,7 +7,7 @@ for (let i: number = 0; i < 20; i++) {
   let stringDate = (year - i - 1).toString() + "/" + (year - i).toString()
   Arr.push(stringDate)
 }
-export const SkolniRok = ({errors, touched}) => {
+export const SkolniRok = ({errors, touched}: any) => {
 
   function hasErrorAndTouched() {
     if (errors
