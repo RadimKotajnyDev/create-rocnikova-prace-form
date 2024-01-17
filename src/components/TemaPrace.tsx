@@ -16,7 +16,7 @@ export const TemaPrace = ({errors, touched}: any) => {
 
   return (
     <>
-      <div className="flex w-[330px] component-preview p-4 gap-2 font-sans">
+      <div className="flex w-[450px] component-preview p-4 gap-2 font-sans">
         <div className="form-control w-full max-w-full">
           <label className="label">
             <span className="label-text text-lg">Téma práce&nbsp;<span className={hasErrorAndTouched() ? "text-red-400" : ""}>

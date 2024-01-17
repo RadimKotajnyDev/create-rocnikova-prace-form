@@ -2,7 +2,6 @@ import {Field} from "formik";
 
 export const JmenoAprijmeni = ({errors, touched}: any) => {
 
-
   function hasErrorAndTouched() {
     if (errors
       && errors.data
@@ -14,11 +13,10 @@ export const JmenoAprijmeni = ({errors, touched}: any) => {
       return true;
     }
   }
-
   return (
     <>
       <div className="flex w-[330px] component-preview p-4 gap-2 font-sans">
-        <div className="form-control w-full max-w-xs">
+        <div className="form-control w-full max-w-lg">
           <label className="label">
             <span className="label-text text-lg">Jméno a příjmení&nbsp;
               <span className={hasErrorAndTouched() ? "text-red-400" : ""}>

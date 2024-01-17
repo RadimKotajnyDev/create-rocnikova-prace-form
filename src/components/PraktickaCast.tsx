@@ -1,6 +1,6 @@
 import {Field} from "formik";
 
-export const PraktickaCast = ({errors, touched}: any) => {
+export const PraktickaCast = ({errors, touched}) => {
 
   function hasErrorAndTouched() {
     if (errors
@@ -16,16 +16,16 @@ export const PraktickaCast = ({errors, touched}: any) => {
 
   return (
     <>
-      <div className="flex w-[330px] component-preview p-4 font-sans flex-col">
+      <div className="flex w-[450px] component-preview p-4 font-sans flex-col">
         <label className="label">
           <span className="label-text text-lg">Praktická část&nbsp;<span className={hasErrorAndTouched() ? "text-red-400" : ""}>
                 {hasErrorAndTouched() ? "(Povinné)" : ""}</span></span>
         </label>
         <Field as="textarea"
                name={`data.prakticka_cast`}
-               className={`input rounded-lg p-2 min-h-[225px] drop-shadow-lg
+               className={`input rounded-lg p-2 min-h-[300px] drop-shadow-lg
                ${hasErrorAndTouched() ? "border-red-400 text-red-600" : ""}
-               `} size="lg"/>
+               `} size="xxl"/>
       </div>
     </>
   )

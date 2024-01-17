@@ -29,19 +29,19 @@ export const FormApp = () => {
             <div className="min-w-[700px]  bg-neutral p-2 rounded-2xl">
               <h1 className="text-center text-4xl font-bold mt-3">Vytvořit novou práci</h1>
               <div className="">
-                <div className="flex flex-row justify-center">
+                <div className="flex flex-row justify-start">
                   <div className="flex flex-col items-center">
                     <JmenoAprijmeni {...{errors, touched}} />
                     <Obor {...{errors, touched}} />
                   </div>
                   <div className="flex flex-col">
-                    <SkolniRok {...{errors, touched}}/>
+                    <Predmet {...{errors, touched}}/>
                     <TemaPrace {...{errors, touched}}/>
                   </div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="flex flex-row justify-center">
-                    <Predmet {...{errors, touched}}/>
+                  <div className="flex flex-row justify-start">
+                    <SkolniRok {...{errors, touched}}/>
                     <VedouciPrace {...{errors, touched}}/>
                   </div>
                 </div>
