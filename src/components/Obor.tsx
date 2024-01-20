@@ -32,9 +32,9 @@ export const Obor = ({errors, touched}: any) => {
               <option value={""} disabled>
                 ------------------------------
               </option>
-              <option value="26-41-M/01 Elektrotechnika">26-41-M/01 Elektrotechnika</option>
-              <option value="18-20-M/01 Informační technologie">18-20-M/01 Informační technologie</option>
-              <option value="23-41-M/01 Strojírenství">23-41-M/01 Strojírenství</option>
+              <option value="elektro">Elektrotechnika</option>
+              <option value="it">Informační technologie</option>
+              <option value="stroj">Strojírenství</option>
             </Field>
             <div className="pointer-events-none z-30 absolute inset-y-0 right-0 flex items-center pr-3 text-white">
               <svg className="h-5 w-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
